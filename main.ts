@@ -2,18 +2,22 @@ input.onButtonPressed(Button.A, function () {
     if (x > 0) {
         led.unplot(x, y)
         x += -1
+        led.plot(x, y)
     } else {
         led.unplot(x, y)
         x = 4
+        led.plot(x, y)
     }
 })
 input.onButtonPressed(Button.B, function () {
     if (x < 4) {
         led.unplot(x, y)
         x += 1
+        led.plot(x, y)
     } else {
         led.unplot(x, y)
         x = 0
+        led.plot(x, y)
     }
 })
 let y = 0
